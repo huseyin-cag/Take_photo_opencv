@@ -11,7 +11,8 @@ while True:
 
     frame = cv2.flip(frame,1) #oluşan video yan olduğu için y(1) ekseninde yansıması alındı
 
-    cv2.imshow("Webcam", frame) #Webcamdeki görüntü framede gösterildi
+    cv2.imshow("Webcam", frame) #frame deki görüntü okundu
+    #Eğer pencere açılmadan fotoğraf çekilmesi isteniyorsa yukarıdaki kod silinebilir
     
     if key == ord("q"): #eğer q ya basılırsa frame kapanacak
         break
